@@ -12,7 +12,6 @@ export default function HackerCardTopRow(props) {
       <SDTopRowCommentor>User</SDTopRowCommentor>
       <SDTopRowSpecificMetric>Total</SDTopRowSpecificMetric>
       <SDTopRowSaltiestComment>Saltiest Comment</SDTopRowSaltiestComment>
-      <SDTopRowLink>See User</SDTopRowLink>
     </SDTopRowHackerCard>
   );
 }
@@ -30,49 +29,42 @@ const SDTopRowHackerCard = styled.div`
   justify-content: space-between;
   font-size: 1rem;
   font-weight: 600;
+  cursor: default;
   @media (max-width: 900px) {
     font-size: 0.9rem;
   }
 `;
 
 const SDTopRowRank = styled.div`
-  width: 5%;
+  width: 10%;
   @media (max-width: 600px) {
     flex-order: 1;
-    width: 20%;
+    width: 10%;
   }
 `;
 
 const SDTopRowCommentor = styled.div`
-  min-width: 16%;
+  min-width: 20%;
   display: flex;
   justify-content: flex-start;
   @media (max-width: 600px) {
     order: 2;
-    width: 40%;
+    width: 30%;
   }
 `;
 
 const SDTopRowSpecificMetric = styled.div`
-  width: 12%;
+  width: 15%;
   @media (max-width: 600px) {
     order: 3;
-    width: 25%;
+    width: 60%;
+    text-align: right;
   }
 `;
 
 const SDTopRowSaltiestComment = styled.div`
-  width: 54%;
+  width: 55%;
   @media (max-width: 600px) {
     display: none;
-  }
-`;
-
-const SDTopRowLink = styled.div`
-  width: 8%;
-  text-align: center;
-  @media (max-width: 600px) {
-    order: 4;
-    width: 10%;
   }
 `;
