@@ -7,6 +7,7 @@ const app = express();
 const helmet = require('helmet');
 const cors = require('cors');
 const firebase = require('firebase');
+const secure = require('ssl-express-www');
 
 //DbConfig
 const config = {
@@ -24,6 +25,7 @@ const db = firebase.firestore();
 const pathToBuildFolder = path.join(__dirname, 'build');
 const pathToIndexHtml = path.join(pathToBuildFolder, 'index.html');
 
+app.use(secure);
 app.use(express.static(pathToBuildFolder));
 app.use(helmet());
 app.use(cors());
