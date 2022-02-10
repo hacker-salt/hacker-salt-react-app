@@ -9,7 +9,7 @@
     "express": "^4.16.4",
     "firebase": "^5.9.4",
     "helmet": "^3.16.0",
-    "node-sass": "^4.11.0",
+    "node-sass": "^7.0.0",
     "proptypes": "^1.1.0",
     "react": "^16.8.5",
     "react-dom": "^16.8.5",
